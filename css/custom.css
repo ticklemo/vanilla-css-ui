@@ -1,0 +1,253 @@
+
+    /* Css reset */
+    /* http://meyerweb.com/eric/tools/css/reset/
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+    	font-size: 100%;
+    	font: inherit;
+    	vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+    	display: block;
+    }
+    body {
+    	line-height: 1;
+    }
+    ol, ul {
+    	list-style: none;
+    }
+    blockquote, q {
+    	quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    	content: '';
+    	content: none;
+    }
+    table {
+    	border-collapse: collapse;
+    	border-spacing: 0;
+    }
+    /* CSS Reset ENDS */
+
+
+    /* All custom css */
+    div {
+      border: 1px solid #000;
+    }
+
+    .mobile-container {
+      height: 100vh;
+      border: pink 6px solid;
+    }
+
+    .mobile-nav {
+      background-color: grey;
+      height: 50px;
+    }
+
+    .burger-menu,
+    .logo,
+    .search {
+      height: 100%;
+      display: inline-block;
+      width: 20.1%;
+      /* border: 2px solid black; */
+    }
+
+    .logo {
+      width: 57.5%;
+    }
+
+    .search {
+      width: 20.75%;
+    }
+
+    .fa-bars,
+    .fa-search
+    {
+      position: absolute;
+      font-size: 1.8rem;
+    }
+
+    .fa-search {
+      top: 0.8rem;
+      right: 1.1rem;
+    }
+
+    .fa-bars {
+      top: 0.8rem;
+      left: 1rem;
+    }
+
+    .daily-section {
+      background-color: teal;
+      height: 120px;
+      height: 30vh;
+    }
+
+    .current-city {
+      text-transform: uppercase;
+      margin-top: 13px;
+      margin-bottom: 13px;
+      padding-left: 10px;
+    }
+
+    .weather-image,
+    .weather-info {
+      height: 75%;
+      float: left;
+      width: 49.4%;
+      border: none;
+    }
+
+    .map-section {
+      background-color: green;
+      height: 23.5vh;
+      margin: 1vh;
+      position: relative;
+    }
+
+    .map {
+      height: 20vh;
+      background-color: #8beecc;
+    }
+
+    .map-title,
+    .expand {
+      position: absolute;
+      background-color: #32a261;
+      height: 3.5vh;
+      display: inline-block;
+    }
+
+    .map-title {
+      bottom: 0;
+      left: 0;
+      width: 80%;
+    }
+
+    .expand {
+      width: 20%;
+      bottom: 0;
+      right: 0;
+    }
+
+
+    .favourite-section {
+      background-color: blue;
+      height: 24vh;
+      margin: 1vh;
+    }
+
+    .footer-section {
+      background-color: yellow;
+      height: 120px;
+    }
+
+/* media queries */
+    /* Extra small devices (phones, 600px and down) */
+    /* this applies css to mobile phones */
+    @media only screen and (max-width: 600px) {
+
+      .daily-section {
+        background-color: red;
+      }
+
+      .logo {
+          width: 50.5%;
+      }
+      
+      .search {
+        width: 18.7%;
+      }
+
+      .fa-search {
+        top: 0.8rem;
+        right: 3.2rem;
+      }
+
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+
+      .daily-section {
+        background-color: blue;
+      }
+
+      .search {
+        width: 19.75%;
+      }
+
+      .fa-search {
+        top: 0.8rem;
+        right: 4.9rem;
+      }
+
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+
+      .daily-section {
+        background-color: turquoise;
+      }
+
+      .search {
+        width: 19.70%;
+      }
+
+      .fa-search {
+        top: 0.8rem;
+        right: 6.6rem;
+      }
+
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+
+      .daily-section {
+        background-color: magenta;
+      }
+
+      .fa-search {
+        top: 0.8rem;
+        right: 8.6rem;
+      }
+
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+
+      .daily-section {
+        background-color: orange;
+      }
+
+      .fa-search {
+        top: 0.8rem;
+        right: 10.6rem;
+      }
+
+    }
